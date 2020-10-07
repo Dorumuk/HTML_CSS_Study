@@ -2,15 +2,41 @@
 <html>
 <head>
     <title>study1</title>
+    <style>
+        h1 {
+            color:whitesmoke;
+            background-color: rosybrown;
+        }
+        #item {
+            color: teal;
+        }
+        option.good{
+            color: yellowgreen;
+        }
+        .morning{
+            font-size: medium;
+        }
+        input[type="text"]{
+            font-weight: bold;
+        }
+        ul>li:hover{
+            font-weight: bold;
+        }
+        p::selection{
+            color: yellow;
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
+    <h1>HTML & CSS study</h1>
     <h3>header1</h3>
     <p>
         <a href="https://blog.naver.com/dongview">this page</a> 
         is dongyun's blog
     </p>
     <ul> 
-        <li>An item </li>
+        <li id="item">An item </li>
         <li>Another item </li>
         <li>Another goes here </li>
     </ul>
@@ -43,6 +69,9 @@
     <form>
         <input type="text"/><br/>
         <input type="button"/><br/>
+        <form action="https://google.com">
+            <input type="submit" value="Go to Google" />
+        </form>
         <input type="checkbox"/><br/>
         <input type="file"/><br/>
         <input type="hidden"/><br/>
@@ -52,11 +81,15 @@
         <input type="submit"/><br/>
     </form>
     <select multiple="multiple">
-        <option>김밥</option>
+        <option class="good morning">김밥</option>
         <option>떡볶이</option>
         <option>순대</option>
         <option>오뎅</option>
     </select>
-    <span class="blind">네이버</span>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum scelerisque interdum. Cras pulvinar dictum orci sit amet tristique. Aliquam id ornare purus. Etiam gravida, tellus consequat pharetra volutpat, tortor tortor consectetur felis, ut varius massa diam et dolor. Duis eu tristique felis. Cras faucibus sem in tortor scelerisque, in tristique sem placerat. Maecenas ut enim suscipit, ultrices libero vel, dignissim ipsum. Proin elementum laoreet semper. Sed mollis scelerisque ligula, vitae volutpat urna mollis at. Mauris lacinia at risus et pellentesque. Vestibulum arcu tortor, dapibus at scelerisque vitae, commodo eget velit. Phasellus mollis euismod augue at consequat. Donec vitae tortor elit. Proin consectetur, dolor vel tempor placerat, elit nisl varius leo, eu laoreet tortor tellus vel turpis.
+
+        Aliquam id semper justo. Pellentesque congue in nibh vel sagittis. Curabitur non turpis et massa venenatis iaculis nec quis massa. Donec mollis pulvinar sagittis. Cras bibendum mollis dolor, quis ultrices nibh pretium nec. Duis commodo a nisl ac porttitor. Praesent vel iaculis leo, consequat iaculis lacus. Maecenas id nisi ac quam sollicitudin vulputate vitae quis lacus. Aliquam dui mi, tristique et mauris tempor, sodales commodo dui.
+    </p>
 </body>
 </html>
