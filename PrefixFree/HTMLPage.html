@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS3 Style Property Basic</title>
+        <link rel="stylesheet" href="StyleSheet.css" />
+        <script src="prefixfree.min.js"></script>
+        <style>
+            #graph{
+                width: 610px;
+                border: 3px solid black;
+            }
+            .bar{
+                width: 10px; height: 50px;
+                background-color: orange;
+                margin: 5px;
+                -webkit-transition-duration: 1s;
+
+                transition-duration: 5px;
+            }
+            #graph:hover>.bar{
+                width: 600px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="graph">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </body>
+</html>
